@@ -1,0 +1,38 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+body nav {
+  height: 10vh;
+  text-align: center;
+}
+
+body nav li {
+  display: inline;
+  font-size: 30px;
+}
+
+body nav a {
+  text-decoration: none;
+  color: green;
+  padding: 5px;
+}
+
+body h1 {
+  text-align: center;
+  position: absolute;
+  font-size: 80px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+/*# sourceMappingURL=style.css.map */
