@@ -4,7 +4,7 @@
   "description": "this project work with vim editor",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/index.js"
   },
   "author": "Sri Sathish",
   "license": "ISC",
