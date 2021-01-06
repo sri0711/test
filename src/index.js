@@ -29,4 +29,4 @@ app.get('/contact',(res,req)=>{
 
 
 // server settings
-app.listen(port,console.log('server is started .server is running on 127.0.0.1:8000'))
+app.listen(port,console.log('server is started .server is running on 127.0.0.1:'+port))
