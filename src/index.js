@@ -2,7 +2,7 @@
 const express = require('express');
 const path = require('path')
 const hbs = require('hbs')
-
+const port =process.env.PORT || 8000
 // variable iniatlizing for directory
 const app = express()
 const views = path.join(__dirname,'../views/hbs_files')
@@ -29,4 +29,4 @@ app.get('/contact',(res,req)=>{
 
 
 // server settings
-app.listen(8000,console.log('server is started .server is running on 127.0.0.1:8000'))
+app.listen(port,console.log('server is started .server is running on 127.0.0.1:8000'))
