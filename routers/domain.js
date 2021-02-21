@@ -6,8 +6,8 @@ router.get('', (res, req) => {
 	req.render('index');
 });
 
-router.get('/about', (res, req) => {
-	req.render('about');
+router.get('/page', (res, req) => {
+	req.render('page');
 });
 
 router.get('/contact', (res, req) => {
