@@ -58,4 +58,8 @@ router.get('/contact', (res, req) => {
 	req.render('contact');
 });
 
+router.get('*', (res, req) => {
+	req.render('error');
+});
+
 module.exports = router;

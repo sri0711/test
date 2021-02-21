@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Under Construction</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+    padding: 0px;
+    margin: 0px;
+    border: borderbox;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    display: flex;
+    font-size: 100%;
+}
+.mainblock{
+    text-align: center;
+    margin-left: 50%;
+    margin-top: 10%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+}
+.base h5{
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.base h3{
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.ring1{
+    height: 10em;
+    width: 10em;
+    border-radius: 50%;
+    border-left: 1em solid green;
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    z-index: 5;
+}
+.ring2{
+    height: 10em;
+    width: 10em;
+    border-radius: 50%;
+    border-top: 1em solid red;
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+}
+.ring3{
+    height: 10em;
+    width: 10em;
+    border-radius: 50%;
+    border-right: 1em solid blue;
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+}
+.ring4{
+    height: 10em;
+    width: 10em;
+    border-radius: 50%;
+    border-bottom: 1em solid yellow;
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+}
+.loading{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    animation-name: loading;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+    animation-direction: normal;
+}
+@keyframes loading{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(2160deg);
+    }
+}
+    </style>    
+</head>
+<body>
+    <div class="page">
+    <div class="mainblock">
+        <h1>Page Under Construction</h1>
+        <p>developer is hardly working for publish the page</p>
+    </div>
+    <div class="loading">
+        <div class="ring1"></div>
+        <div class="ring2"></div>
+        <div class="ring3"></div>
+        <div class="ring4"></div>
+    </div>
+    <div class="base">
+        <h5>designing</h5>
+        <h3>M Sri Sathish</h3>
+    </div>
+    <audio class="audio" src="/sounds/audio.mp3" hidden></audio>
+    <script>
+        const audio = document.querySelector(".audio");
+        const loading = document.querySelector(".loading")
+        window.addEventListener("load", function (){
+            audio.play();
+        });
+        loading.addEventListener("click", function (){
+        audio.play();
+        });
+    </script>
+    </div>
+</body>
+</html>
