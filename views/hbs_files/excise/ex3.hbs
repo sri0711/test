@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>News Papper</title>
+		<style>
+			* {
+				margin: 1vh;
+				padding: 0;
+				-webkit-box-sizing: border-box;
+				box-sizing: border-box;
+			}
+
+			body {
+				background-color: black;
+				height: 95vh;
+				width: 95vw;
+			}
+
+			body header {
+				background-color: white;
+				height: 10vh;
+				text-align: center;
+				padding: 1vh;
+				color: #bb3232;
+			}
+
+			body .main {
+				height: 50vh;
+				width: 60vw;
+				background-image: url('/images/lw.jpg');
+				background-size: cover;
+			}
+
+			body .main h1,
+			body .main h4 {
+				text-align: center;
+				background-color: rgba(255, 255, 255, 0.288);
+				height: 10vh;
+				margin: 0;
+			}
+
+			body .right {
+				background-color: brown;
+				top: 12vh;
+				left: 62vw;
+				height: 85vh;
+				width: 33vw;
+				position: absolute;
+				background-image: url('/images/rip.jpg');
+				background-size: cover;
+			}
+
+			body .right h1 {
+				padding-bottom: 88%;
+			}
+
+			body .right h2,
+			body .right h5 {
+				text-align: center;
+				background-color: rgba(255, 255, 255, 0.288);
+				height: 10vh;
+				margin: 0;
+				color: white;
+			}
+
+			body .bottom {
+				display: -webkit-box;
+				display: -ms-flexbox;
+				display: flex;
+			}
+
+			body .row:nth-child(1) {
+				height: 30vh;
+				width: 19.25vw;
+				background-image: url('/images/python.png');
+				background-size: cover;
+				background-repeat: no-repeat;
+			}
+
+			body .row:nth-child(1) h3,
+			body .row:nth-child(1) h6 {
+				text-align: center;
+				background-color: rgba(255, 255, 255, 0.288);
+				height: 10vh;
+				margin: 0;
+				color: white;
+			}
+
+			body .row:nth-child(2) {
+				height: 30vh;
+				width: 19.25vw;
+				background-image: url('/images/linux.png');
+				background-size: cover;
+				background-repeat: no-repeat;
+			}
+
+			body .row:nth-child(2) h3,
+			body .row:nth-child(2) h6 {
+				text-align: center;
+				margin: 0;
+				background-color: rgba(255, 255, 255, 0.288);
+				height: 10vh;
+				color: white;
+			}
+
+			body .row:nth-child(3) {
+				height: 30vh;
+				width: 19.25vw;
+				background-image: url('/images/cinnamon.jpg');
+				background-size: fill;
+				background-repeat: no-repeat;
+			}
+
+			body .row:nth-child(3) h3,
+			body .row:nth-child(3) h6 {
+				text-align: center;
+				background-color: rgba(255, 255, 255, 0.288);
+				height: 10vh;
+				margin: 0;
+				color: white;
+			}
+
+			body .more {
+				height: 10vh;
+				background-color: crimson;
+			}
+
+			body .more a {
+				text-decoration: none;
+				color: white;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<h1>Sri Publications</h1>
+		</header>
+		<div class="main">
+			<h1>
+				Linux vs Windows
+				<span class="more"
+					><a href="https://itsfoss.com/linux-better-than-windows/"
+						>more</a
+					></span
+				>
+			</h1>
+			<h4>
+				windows users are think we have greate operating system,<br />
+				but it is actualy wrong
+			</h4>
+		</div>
+		<div class="right">
+			<h1></h1>
+			<h2>
+				Java is Died
+				<span class="more"
+					><a
+						href="https://medium.com/better-programming/why-java-is-dying-b02b5fd44db9"
+						>more</a
+					></span
+				>
+			</h2>
+			<h5>java is killed by javascript</h5>
+		</div>
+		<div class="bottom">
+			<div class="row">
+				<h3>
+					python is updated
+					<span class="more"
+						><a
+							href="https://pythoninsider.blogspot.com/2021/02/python-392rc1-and-388rc1-are-now.html?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+PythonInsider+%28Python+Insider%29"
+							>more</a
+						></span
+					>
+				</h3>
+				<h6>python has patched v3.9.2.</h6>
+			</div>
+			<div class="row">
+				<h3>
+					Types of Linux os
+					<span class="more"
+						><a
+							href="https://www.tecmint.com/linux-distro-for-power-users/"
+							>more</a
+						></span
+					>
+				</h3>
+				<h6>majorly linux has splited by three</h6>
+			</div>
+			<div class="row">
+				<h3>
+					Cinnamon is killer editon
+					<span class="more"
+						><a
+							href="https://en.wikipedia.org/wiki/Cinnamon_(desktop_environment)"
+							>more</a
+						></span
+					>
+				</h3>
+				<h6>peoples mostly like linux flavour is Cinnamon</h6>
+			</div>
+		</div>
+	</body>
+</html>
