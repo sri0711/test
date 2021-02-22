@@ -14,7 +14,7 @@ router.get('/page/ex1', (req, res) => {
 	res.render('excise/ex1');
 });
 
-router.get('/page/ex23', (req, res) => {
+router.get('/page/ex2', (req, res) => {
 	res.render('excise/ex2');
 });
 
