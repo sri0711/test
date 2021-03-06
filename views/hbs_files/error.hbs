@@ -122,9 +122,13 @@
         <h3>M Sri Sathish</h3>
         <p>touch the spinning wheel. then listen the song and be patient</p>
     </div>
-    <audio class="audio" src="/sounds/audio.mp3" hidden></audio>
+    <audio class="audio1" src="/sounds/audio.mp3" hidden></audio>
+    <audio class="audio2" src="/sounds/audio1.mp3" hidden></audio>
+    <audio class="audio3" src="/sounds/audio2.mp3" hidden></audio>
     <script>
-        const audio = document.querySelector(".audio");
+        var ntrack = Math.floor((Math.random()*3)+1)
+        console.log(ntrack)
+        const audio = document.querySelector(`.audio${ntrack}`);
         const loading = document.querySelector(".loading")
         window.addEventListener("load", function (){
             audio.play();
