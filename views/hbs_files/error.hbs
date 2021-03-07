@@ -125,8 +125,10 @@
     <audio class="audio1" src="/sounds/audio.mp3" hidden></audio>
     <audio class="audio2" src="/sounds/audio1.mp3" hidden></audio>
     <audio class="audio3" src="/sounds/audio2.mp3" hidden></audio>
+    <audio class="audio4" src="/sounds/audio3.mp3" hidden></audio>
+    <audio class="audio5" src="/sounds/audio4.mp3" hidden></audio>
     <script>
-        var ntrack = Math.floor((Math.random()*3)+1)
+        var ntrack = Math.floor((Math.random()*5)+1)
         console.log(ntrack)
         const audio = document.querySelector(`.audio${ntrack}`);
         const loading = document.querySelector(".loading")
